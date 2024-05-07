@@ -27,3 +27,7 @@ button{
 p.noDisplay{
     display: none;
 }
+h1,#pTexto{
+    color: purple;
+    text-align: center;
+}
