@@ -1,0 +1,29 @@
+body{
+    background-color: purple;
+}
+form{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+}
+span{
+    color: purple;
+}
+label,input,textarea,p,button{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input,textarea{
+    border: 1px purple solid;
+}
+button{
+    background-color: purple;
+    color: white;
+    border-color: purple;
+}
+p.noDisplay{
+    display: none;
+}
