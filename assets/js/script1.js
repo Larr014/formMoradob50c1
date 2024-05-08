@@ -1,3 +1,8 @@
+window.addEventListener("load",()=>{
+    document.getElementById("btnValidar").addEventListener("click",validar);
+    document.getElementById("btnContraste").addEventListener("click",contraste);
+
+})
 function validar(){
     validarVacio("nombre");
     validarVacio("email");
