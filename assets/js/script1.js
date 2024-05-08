@@ -44,3 +44,49 @@ function validarLongitud(idCampo,max){
         eParrafoValor.style.display = "block";
     }
 }
+function contraste(){
+    let eBody = document.body;
+    let colorBody = eBody.style.backgroundColor;
+    let eH1 = document.getElementsByClassName("textoH1");
+    let eInputs = document.getElementsByTagName("input");
+    let eTextAreas = document.getElementsByTagName("textarea");
+    //console.log(eInputs);
+    //console.log(eInputs[1]);
+    //const elementos = {...eInputs,...eTextAreas}
+    //console.log(elementos);
+    //console.log(elementos[0])
+    if(colorBody=="black"){
+        eBody.style.backgroundColor = "purple";
+        for (let index = 0; index < eH1.length; index++) {
+            const element = eH1[index];
+            element.style.color = "purple";
+        }
+        for (let index = 0; index < eInputs.length; index++) {
+            const element = eInputs[index];
+            element.style.borderColor = "purple";
+        }
+        for (let index = 0; index < eTextAreas.length; index++) {
+            const element = eTextAreas[index];
+            element.style.borderColor = "purple";
+        }
+        //eH1.style.color = "purple";
+    }else{
+        eBody.style.backgroundColor = "black";
+        for (let index = 0; index < eH1.length; index++) {
+            const element = eH1[index];
+            element.style.color = "black";
+        }
+        for (let index = 0; index < eInputs.length; index++) {
+            const element = eInputs[index];
+            element.style.borderColor = "black";
+        }
+        for (let index = 0; index < eTextAreas.length; index++) {
+            const element = eTextAreas[index];
+            element.style.borderColor = "black";
+        }
+        //eH1.style.color = "black";
+    }
+    
+    
+     
+}
